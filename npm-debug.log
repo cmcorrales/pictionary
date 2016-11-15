@@ -1,0 +1,43 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '--save',
+1 verbose cli   '.bin' ]
+2 info using npm@2.15.9
+3 info using node@v4.6.1
+4 verbose install initial load of /Users/cassandracorrales/projects/pictionary/package.json
+5 warn package.json pictionary@1.0.0 No description
+6 warn package.json pictionary@1.0.0 No repository field.
+7 warn package.json pictionary@1.0.0 No README data
+8 verbose installManyTop reading scoped package data from /Users/cassandracorrales/projects/pictionary/node_modules/bin/package.json
+9 verbose installManyTop reading scoped package data from /Users/cassandracorrales/projects/pictionary/node_modules/express/package.json
+10 verbose installManyTop reading scoped package data from /Users/cassandracorrales/projects/pictionary/node_modules/socket.io/package.json
+11 info package.json bin@0.0.0 No README data
+12 info package.json bin@0.0.0 No license field.
+13 verbose readDependencies loading dependencies from /Users/cassandracorrales/projects/pictionary/package.json
+14 silly cache add args [ '.bin', null ]
+15 verbose cache add spec .bin
+16 silly cache add parsed spec Result {
+16 silly cache add   raw: '.bin',
+16 silly cache add   scope: null,
+16 silly cache add   name: null,
+16 silly cache add   rawSpec: '.bin',
+16 silly cache add   spec: '/Users/cassandracorrales/projects/pictionary/.bin',
+16 silly cache add   type: 'local' }
+17 error addLocal Could not install /Users/cassandracorrales/projects/pictionary/.bin
+18 verbose stack Error: ENOENT: no such file or directory, open '/Users/cassandracorrales/projects/pictionary/.bin'
+18 verbose stack     at Error (native)
+19 verbose cwd /Users/cassandracorrales/projects/pictionary
+20 error Darwin 14.5.0
+21 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "--save" ".bin"
+22 error node v4.6.1
+23 error npm  v2.15.9
+24 error path /Users/cassandracorrales/projects/pictionary/.bin
+25 error code ENOENT
+26 error errno -2
+27 error syscall open
+28 error enoent ENOENT: no such file or directory, open '/Users/cassandracorrales/projects/pictionary/.bin'
+28 error enoent This is most likely not a problem with npm itself
+28 error enoent and is related to npm not being able to find a file.
+29 verbose exit [ -2, true ]

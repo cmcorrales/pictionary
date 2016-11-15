@@ -13,7 +13,6 @@ var waitingForConnection = false;
 
 io.on('connect', function(socket) {
     console.log('client connected');
-
     players++;
 
     if(waitingForConnection) {
@@ -28,17 +27,6 @@ io.on('connect', function(socket) {
 
     socket.on('guess', function(guess) {
         socket.broadcast.emit('guess', guess);
-    });
-
-    //deal with disconnected players
-    socket.on('disconnect', function() {
-        players--;
-        if(players<2) {
-            var message = "A user has disconnected, please wait for a new connection";
-            io.emit('disconnect', message);
-            waitingForConnection = true;
-        }
-
     });
 
 });
